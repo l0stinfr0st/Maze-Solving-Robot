@@ -48,7 +48,7 @@ A Bluetooth-controlled autonomous robot capable of navigating and solving physic
 
 
 
-\## How It Works
+## How It Works
 
 
 
@@ -116,7 +116,7 @@ The discovered maze path is stored in EEPROM so the route can persist even after
 
 
 
-\## Author
+## Author
 
 
 
