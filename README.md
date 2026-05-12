@@ -1,4 +1,4 @@
-\# Maze Solving Robot
+# Maze Solving Robot
 
 
 
@@ -6,45 +6,45 @@ A Bluetooth-controlled autonomous robot capable of navigating and solving physic
 
 
 
-\## Features
+## Features
 
 
 
-\- Manual control through Bluetooth and a mobile phone
+- Manual control through Bluetooth and a mobile phone
 
-\- Autonomous maze solving
+- Autonomous maze solving
 
-\- Path storage using Arduino EEPROM
+- Path storage using Arduino EEPROM
 
-\- Audio feedback based on the discovered path
+- Audio feedback based on the discovered path
 
-\- Obstacle detection using an ultrasonic sensor
+- Obstacle detection using an ultrasonic sensor
 
-\- Servo-mounted sensor scanning for directional decisions
+- Servo-mounted sensor scanning for directional decisions
 
-\- Light sensor interrupt to detect maze completion
-
-
-
-\## Hardware Used
+- Light sensor interrupt to detect maze completion
 
 
 
-\- Arduino
+## Hardware Used
 
-\- L298N motor driver
 
-\- HC-SR04 ultrasonic sensor
 
-\- Servo motor
+- Arduino
 
-\- Bluetooth module
+- L298N motor driver
 
-\- Light sensor
+- HC-SR04 ultrasonic sensor
 
-\- Buzzer
+- Servo motor
 
-\- DC motors and chassis
+- Bluetooth module
+
+- Light sensor
+
+- Buzzer
+
+- DC motors and chassis
 
 
 
@@ -58,11 +58,11 @@ The robot continuously scans its surroundings using a servo-mounted ultrasonic s
 
 Once the maze is completed, a light sensor triggers an interrupt to signal completion. The robot then:
 
-\- Stops movement
+- Stops movement
 
-\- Stores the discovered route in EEPROM
+- Stores the discovered route in EEPROM
 
-\- Plays a tune corresponding to the path taken
+- Plays a tune corresponding to the path taken
 
 
 
@@ -70,7 +70,7 @@ The robot can also be manually controlled through a Bluetooth connection using a
 
 
 
-\## Maze Solving Logic
+## Maze Solving Logic
 
 
 
@@ -78,13 +78,13 @@ The navigation logic follows this priority:
 
 
 
-1\. Check left path
+1. Check left path
 
-2\. If blocked, check front
+2. If blocked, check front
 
-3\. If blocked again, check right
+3. If blocked again, check right
 
-4\. Perform turns by rotating wheels in opposite directions
+4. Perform turns by rotating wheels in opposite directions
 
 
 
@@ -92,7 +92,7 @@ The robot also moves slightly forward after each turn for alignment.
 
 
 
-\## EEPROM Path Storage
+## EEPROM Path Storage
 
 
 
@@ -100,19 +100,19 @@ The discovered maze path is stored in EEPROM so the route can persist even after
 
 
 
-\## Future Improvements
+## Future Improvements
 
 
 
-\- Faster shortest-path optimization
+- Faster shortest-path optimization
 
-\- PID motor control
+- PID motor control
 
-\- Improved mapping and localization
+- Improved mapping and localization
 
-\- Mobile app interface
+- Mobile app interface
 
-\- Real-time maze visualization
+- Real-time maze visualization
 
 
 
